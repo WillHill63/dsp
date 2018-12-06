@@ -55,7 +55,7 @@ In the Terminal:
 
 `python3 --version`
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> ##Python 3.6.5## is the version jof Python that is installed on my computer.
 
  
 
