@@ -20,7 +20,18 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **Cheat Sheet of Unix Commands** . 
+**pwd** --> show current working directory path . 
+**mkdir** --> create a directory . 
+**rm -R** --> delete a directory and the files within the directory .  
+**touch filename** --> create a new file . 
+**rm filename** --> delete a file . 
+**mv filename1 filename2** --> rename file1 as file2 . 
+**ls -ld .** --> lists only the hidden files on a directory . 
+**cp filename /destination_directory** --> copy a file from current directory to another directory      
+**cat filename** --> displays the contents of a file to the screen .  
+**grep text filename** --> search a file for the specified text and displays the results on the screen .  
+ 
 
 ---
 
@@ -35,7 +46,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **Commonly Used Unix Commands**
+**ls** --> lists files and subdirectories on a given directory
+**ls -a** --> lists *all* files and subdirectories (including hidden ones) on a given directory
+**ls -l** --> lists files and subdirectories in long format . 
+**ls -lh** --> lists files and subdirectoris in long format, with filesizes expressed in human readable format (B, K or M) . 
+**ls -lah** -->  lists all files and subdirectories (including hidden ones) in long format and with the filesizes expressed in human readable format (B, K, or M) . 
+**ls -t** --> lists files and subdirectories on a directory, showing the newest ones first . 
+**ls -Glp** --> 
 
 ---
 
@@ -43,7 +61,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **Five Other Versions of the 'ls' Command:** . 
+**ls -m** --> displays files and subdirectories on a directory as a comma separated list . 
+**ls -p** --> displays files and subdirectories on a directory, with the subdirectories appended by '/' . 
+**ls -r** --> displays files and subdirectories on a directory in reverse order . 
+**ls -R** --> displays files and subdirectories on a directory, as well as the files in each subdirectory . 
+**ls -1** --> displays each file and subdirectory in the directory on a separate line . 
+
 
 ---
 
@@ -51,7 +75,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **xargs** is a Unix command that reads items from standard input (normally separated by blanks) and then executes a command for each argument from the standard input . 
 
  
 
