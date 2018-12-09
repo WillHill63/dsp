@@ -97,7 +97,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > **xargs** is a Unix command builds an execution pipeline from standard input.  For example, the command "echo 'metis_work, python_files, excel_worksheets, word_documents, seaborn_graphs' | xargs mkdir" would read the standard input string and create separate directories named after each element in the string that is separated by a space.  The result of the command would be create five new directories named 'metis_work', 'python_files', 'excel_worksheets', 'word_documents' and 'seaborn_graphs'.  
+> > **xargs** is a Unix command that builds an execution pipeline from standard input.  For example, the command  
+
+    "echo 'metis_work, python_files, excel_worksheets, word_documents, seaborn_graphs' | xargs mkdir"  
+
+would read the standard input string, split out the five items separated by a space and create directories named after each item in the input string.  Running the command would create five new directories named 'metis_work', 'python_files', 'excel_worksheets', 'word_documents' and 'seaborn_graphs'.  
 
 
  
