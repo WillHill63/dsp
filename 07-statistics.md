@@ -100,23 +100,23 @@ for key in actual_dict:
   
 # Calculate Biased Distribution
 
-biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency') .  
-biased_dist[0] = 0 .  
-thinkplot.Hist(biased_dist) .  
-thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count') . 
+biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency') .  /n  
+biased_dist[0] = 0   ./n  
+thinkplot.Hist(biased_dist)   .  /n
+thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count')   . /n
   
-biased_n = biased_dist.Total() . 
+biased_n = biased_dist.Total()  . /n 
 
-biased_dict = {}   .  . 
-for x in resp['numkdhh']:  
-    biased_dict[x] = biased_dict.get(x, 0) + 1 . . 
-biased_dict[0] = 0
+biased_dict = {}    /n  
+for x in resp['numkdhh']:    /n
+    biased_dict[x] = biased_dict.get(x, 0) + 1   ./n 
+biased_dict[0] = 0 .  /n
 
       
-biased_mean = 0   . 
-for key in biased_dict:    
-    quick_calc = biased_dict[key] * key / biased_n  . 
-    biased_mean += quick_calc   . 
+biased_mean = 0   /n  
+for key in biased_dict:    /n
+    quick_calc = biased_dict[key] * key / biased_n    . /n
+    biased_mean += quick_calc   . /n
      
    
 Part 2:  Output from code (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
