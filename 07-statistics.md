@@ -83,19 +83,19 @@ Here is the code I used to solve the problem:
 Part 1:  Code to model the actual distribtion of the data set .  
  
 # Calculate Actual Distribution    
-actual_dist = thinkstats2.Hist(resp['numkdhh'], label='frequency') .  .  
-thinkplot.Hist(actual_dist)   .  
-thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count') .  .  
+actual_dist = thinkstats2.Hist(resp['numkdhh'], label='frequency') .    /n
+thinkplot.Hist(actual_dist)     /n 
+thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count') .  ./n  
    
-actual_n = actual_dist.Total() .  .  
-actual_dict = {}    .
-for x in resp['numkdhh']:      
-    actual_dict[x] = actual_dict.get(x, 0) + 1    .  
+actual_n = actual_dist.Total()     .  /n .   
+actual_dict = {}     /n . 
+for x in resp['numkdhh']:      /n . 
+    actual_dict[x] = actual_dict.get(x, 0) + 1    /n . .  
      
-actual_mean = 0    . 
+actual_mean = 0    /n . 
 for key in actual_dict:  
-    quick_calc = actual_dict[key] * key /actual_n   . 
-    actual_mean += quick_calc   
+    quick_calc = actual_dict[key] * key /actual_n   /n  . 
+    actual_mean += quick_calc   /n . 
        
   
 # Calculate Biased Distribution
