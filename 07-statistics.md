@@ -93,9 +93,10 @@ for x in resp['numkdhh']:
     actual_dict[x] = actual_dict.get(x, 0) + 1    .  
      
 actual_mean = 0    . 
-for key in actual_dict:         
+for key in actual_dict:  
     quick_calc = actual_dict[key] * key /actual_n   . 
-    actual_mean += quick_calc      
+    actual_mean += quick_calc   
+       
   
 # Calculate Biased Distribution
 
@@ -105,14 +106,15 @@ thinkplot.Hist(biased_dist) .
 thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count') . 
   
 biased_n = biased_dist.Total() . 
+
 biased_dict = {}   .  . 
-for x in resp['numkdhh']:             
-    biased_dict[x] = biased_dict.get(x, 0) + 1 .  . 
+for x in resp['numkdhh']:   
+    biased_dict[x] = biased_dict.get(x, 0) + 1 . . 
 biased_dict[0] = 0   . 
       
 biased_mean = 0   . 
-for key in biased_dict:     
-    quick_calc = biased_dict[key] * key / biased_n   . 
+for key in biased_dict:    
+    quick_calc = biased_dict[key] * key / biased_n  . 
     biased_mean += quick_calc   . 
      
    
