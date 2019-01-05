@@ -114,7 +114,21 @@ The fraction reduces to ( 5/3000 / 11/3000), or **5/11**.  The probability that 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> **ANSWER TO QUESTION 6**
+
+NOTE:  The response to this question is based in large part from material in "A Comparison Of Bayesian And Frequentist Statisticas As Applied In A Simple Repeated Measures Example" (Jan Perkins & Daniel Wang), as well as various articles in Wikipedia.
+
+
+Bayesian methods model uncertainty by a prior probability distribution over the research hypothesis. This probability is termed the posterior distribution and is used to reach conclusions about the research question.  The prior probability distribution may be based on a variety of external evidence and expert opinions.  With continued data collection, it is possible to revise the analysis and determine a new (and hopefully more precise) posterior distribution that can be used to analyze the research hypothesis and the data set.  This updating of the prior distribution occurs as understanding of the problem of interest changes in light of the evidence gathered. 
+
+Essentially, this process can be summarized as assigning an initial prior probability distribution, revising that prior probability distribution by integrating new information from different sources as evidence is collected, and then revising conclusions in light of new information.
+
+Classical (or frequentist) statistics is what most people study in a high school or college statistics class.  Data is interpreted based using statistical models based on frequencies.  Probabilities of an event are a function of the number of times the event occurs in the set of available data.  No prior probability distributions are assumed -- in fact, this is actively discouraged because it is thought to introduce unnwanted subjectivity into the analysis.  
+
+In frequentist statistics, researchers form a hypothesis based on the analysis of a sample data set from a larger population. This hypothesis is compared to an alternative, or null, hypothesis.  Hypothesis tests are used to determine what outcomes of a study would lead to the rejection of the null hypothesis based on a pre-specified level of significance, which is expressed by p-values and confidence intervals.         
+
+
+
 
 ---
 
