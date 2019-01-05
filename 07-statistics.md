@@ -75,6 +75,56 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 ### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
+
+**ANSWER TO QUESTION 3**
+
+Here is the code I used to solve the problem:
+
+Part 1:  Code to model the actual distribtion of the data set
+
+actual_dist = thinkstats2.Hist(resp['numkdhh'], label='frequency')
+thinkplot.Hist(actual_dist)
+thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count')
+
+actual_n = actual_dist.Total()
+actual_dict = {}
+for x in resp['numkdhh']:
+    actual_dict[x] = actual_dict.get(x, 0) + 1
+    
+actual_mean =0
+for key in actual_dict:
+    quick_calc = actual_dict[key] * key /actual_n
+    actual_mean += quick_calc
+
+
+biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency')
+biased_dist[0] = 0
+thinkplot.Hist(biased_dist)
+thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count')
+
+biased_n = biased_dist.Total()
+biased_dict = {}
+for x in resp['numkdhh']:
+    biased_dict[x] = biased_dict.get(x, 0) + 1
+biased_dict[0] = 0
+    
+biased_mean = 0
+for key in biased_dict:
+    quick_calc = biased_dict[key] * key / biased_n
+    biased_mean += quick_calc
+    
+
+Output (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
+
+
+
+
+
+
+
+
+
+
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
 This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
 
