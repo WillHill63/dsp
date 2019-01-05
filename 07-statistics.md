@@ -69,6 +69,47 @@ Cohen's D is an example of effect size.  Other examples of effect size are:  cor
 
 You will see effect size again and again in results of algorithms that are run in data science.  For instance, in the bootcamp, when you run a regression analysis, you will recognize the t-statistic as an example of effect size.
 
+
+**ANSWER TO QUESTION 1**
+
+HERE IS MY CODE FOR QUESTION 1:  
+
+Step 1:  Define A Function to Calculate Cohen's D:   
+
+def CohenEffectSize(group1, group2):     /n
+    diff = group1.mean() - group2.mean() .  
+    var1 = group1.var() .  
+    var2 = group2.var() .      
+    n1 = len(group1) .  
+    n2 = len(group2) .  
+    pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2) .  
+    d = diff / math.sqrt(pooled_var) . 
+    return d . 
+    
+
+Step 2:  Assign variables to hold pregnancy length and total weight data for first born children and non-first born children.
+
+Group_1a = firsts['totalwgt_lb']
+Group_2a = others['totalwgt_lb']
+
+Group_1b = firsts['prglngth']
+Group_2b = others['prglngth']
+
+
+Step 3:  Calculate Cohen's D for Total Weight and Pregnancy Length:
+
+import math
+
+Diff_BirthWeight = CohenEffectSize(Group_1a, Group_2a) .  
+**Cohen's D for BirthWeight is -0.0886729.  This result is well within the normal range of error and is not statistically significant.  The standard deviation of BirthWeight is 1.40829 pounds, which is many times greater than Cohen's D for BirthWieight.**
+
+Diff_PregLength = CohenEffectSize(Group_1b, Group_2b)
+**Cohen's D for Pregnancy Length for Pregnancy Length is 0.02887904.  This result is also within the normal range of error and is not statistically signficant.  The standard deviation for Pregnancy Length is 2.7023, which is almost 100x greater than the value for Cohen's D.** 
+
+
+
+
+
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
