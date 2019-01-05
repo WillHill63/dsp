@@ -72,11 +72,8 @@ You will see effect size again and again in results of algorithms that are run i
 ### Q2. [Think Stats Chapter 3 Exercise 1](statistics/3-1-actual_biased.md) (actual vs. biased)
 This problem presents a robust example of actual vs biased data.  As a data scientist, it will be important to examine not only the data that is available, but also the data that may be missing but highly relevant.  You will see how the absence of this relevant data will bias a dataset, its distribution, and ultimately, its statistical interpretation.
 
-### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
-This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
-
-**ANSWER TO QUESTION 3**
+**ANSWER TO QUESTION 2**
 
 Here is the code I used to solve the problem:
 
@@ -93,11 +90,13 @@ for x in resp['numkdhh']:      /n .
     actual_dict[x] = actual_dict.get(x, 0) + 1    /n . .  
      
 actual_mean = 0    /n . 
-for key in actual_dict:  
+for key in actual_dict:    /n
     quick_calc = actual_dict[key] * key /actual_n   /n  . 
     actual_mean += quick_calc   /n . 
-       
-  
+
+The mean value of children per family for the unbiased sample is **1.024205**.
+
+
 # Calculate Biased Distribution
 
 biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency') .  /n  
@@ -106,20 +105,29 @@ thinkplot.Hist(biased_dist)   .  /n
 thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count')   . /n
   
 biased_n = biased_dist.Total()  . /n 
-
 biased_dict = {}    /n  
 for x in resp['numkdhh']:    /n
     biased_dict[x] = biased_dict.get(x, 0) + 1   ./n 
 biased_dict[0] = 0 .  /n
+    
+biased_mean =0
+for key in biased_dict:
+    quick_calc = biased_dict[key] * key / biased_n
+    biased_mean += quick_calc
 
-      
-biased_mean = 0   /n  
-for key in biased_dict:    /n
-    quick_calc = biased_dict[key] * key / biased_n    . /n
-    biased_mean += quick_calc   . /n
+The mean value of children per family for the biased sample is **1.918627** . 
+
      
    
 Part 2:  Output from code (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
+
+
+### Q3. [Think Stats Chapter 4 Exercise 2](statistics/4-2-random_dist.md) (random distribution)  
+This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
+
+       
+  
+
      
 
    
