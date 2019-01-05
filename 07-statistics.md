@@ -88,7 +88,7 @@ thinkplot.Hist(actual_dist)   .
 thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count') .  .  
    
 actual_n = actual_dist.Total() .  .  
-actual_dict = {}    .  
+actual_dict = {}    .
 for x in resp['numkdhh']:      
     actual_dict[x] = actual_dict.get(x, 0) + 1    .  
      
@@ -108,9 +108,10 @@ thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel=
 biased_n = biased_dist.Total() . 
 
 biased_dict = {}   .  . 
-for x in resp['numkdhh']:   
+for x in resp['numkdhh']:  
     biased_dict[x] = biased_dict.get(x, 0) + 1 . . 
-biased_dict[0] = 0   . 
+biased_dict[0] = 0
+
       
 biased_mean = 0   . 
 for key in biased_dict:    
