@@ -114,15 +114,13 @@ for key in biased_dict:
     biased_mean += quick_calc . 
     
 
-Output (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
+Part 2:  Output from code (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
+     
 
-
-
-
-
-
-
-
+   
+   
+   
+   
 
 
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
