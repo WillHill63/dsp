@@ -88,22 +88,22 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> **ANSWER TO QUESTION 5**
 
-This is an example of conditional probability.  To answer the question, you need to focus on the relative probability of being an identical twin to the probability of being **either** a fraternal twin **or** and identical twin. 
+This is an example of conditional probability.  To answer the question, you need to focus on the relative probability of being an identical twin to the probability of being **either** a fraternal twin **or** an identical twin. 
 
-Let's start with the probability of being an identical twin (1/300).  This is not the probability we need, because a set of identical twins will be composed of either two boys or two girls.  We are only interested in the probability of two boys, which can be expressed as (1/300) * 0.50 or (1/600).  This probability will be the numerator of the fraction we will solve.
+Let's start with the probability of being an identical twin (1/300).  This is not the probability we need, because a set of identical twins will be composed of **either** two boys **or** two girls.  We are only interested in the probability of two boys, which can be expressed as (1/300) * 0.50 or **(1/600)**.  This probability will be the numerator of the fraction we will solve.
 
-The denominator will be the probability of being an identical **male** twin plus the probability of being a part of a set of **male** fraternal twins.  We have already calculated the first probability, so let's move on to finding the probability of being one of two male fraternal twins.
+The denominator will be the probability of being an identical **male** twin **plus** the probability of being a part of a set of **male** fraternal twins.  We have already calculated the first probability, so let's move on to finding the probability of being one of two male fraternal twins.
 
-We know the probability of being part of a set of fraternal twins is (1/125).  There are four possible ways that fraternal twins can come:  two boys (25%), two girls (25%), 1st twin boy and 2nd twin girl (25%) and 1st twin girl and 2nd twin boy (25%).  So the probability of having a set of fraternal boy twins is (1/125) * 0.25 or (1/500).
+We know the probability of being part of a set of fraternal twins is (1/125).  There are four possible ways that fraternal twins can be ordered:  two boys (25%), two girls (25%), 1st twin boy / 2nd twin girl (25%) and 1st twin girl / 2nd twin boy (25%).  So the probability of having a set of fraternal boy twins is (1/125) * 0.25 or **(1/500)**.
 
-Putting it all together, the numerator is the probability of two identical male twins (1/600) divided by the probability of two identical male twins (1/600) PLUS the probability of two male fraternal twins (1/500).
+Putting it all together, the numerator is the probability of two identical male twins (1/600) divided by the probability of two identical male twins (1/600) **PLUS** the probability of two male fraternal twins (1/500).
 
-This expression is equal to:  (1/600) / ( (1/600) + (1/500) ).  We need to convert the denominator of all the fractions to the least common denominator, which is 3000.  That will enable us to complete the calculation.
+This expression is equal to:  **(1/600) / ( (1/600) + (1/500) )**.  We need to convert the denominator of all the fractions to the least common denominator, which is 3000.  That will enable us to complete the calculation.
 
 Once we restate all the fractions in terms of their least common denominator, the expression looks like this:
-      (5/3000) / ( 5/3000 + 6/3000 )
+      **(5/3000) / ( 5/3000 + 6/3000 )**
 
-The fraction reduces to ( 5/3000 / 11/3000), or 5/11.  The probability that Elvis was an identical twin **GIVEN** that he had a twin brother is 5/11, or **45.4545%**.
+The fraction reduces to ( 5/3000 / 11/3000), or **5/11**.  The probability that Elvis was an identical twin **GIVEN** that he had a twin brother is 5/11, or **45.4545%**.
 
 
 
