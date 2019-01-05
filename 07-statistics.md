@@ -80,38 +80,38 @@ This questions asks you to examine the function that produces random numbers.  I
 
 Here is the code I used to solve the problem:
 
-Part 1:  Code to model the actual distribtion of the data set
-
-actual_dist = thinkstats2.Hist(resp['numkdhh'], label='frequency')
-thinkplot.Hist(actual_dist)
-thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count')
-
-actual_n = actual_dist.Total()
-actual_dict = {}
-for x in resp['numkdhh']:
-    actual_dict[x] = actual_dict.get(x, 0) + 1
-    
-actual_mean =0
-for key in actual_dict:
-    quick_calc = actual_dict[key] * key /actual_n
-    actual_mean += quick_calc
-
-
-biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency')
-biased_dist[0] = 0
-thinkplot.Hist(biased_dist)
-thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count')
-
-biased_n = biased_dist.Total()
-biased_dict = {}
-for x in resp['numkdhh']:
-    biased_dict[x] = biased_dict.get(x, 0) + 1
-biased_dict[0] = 0
-    
-biased_mean = 0
-for key in biased_dict:
-    quick_calc = biased_dict[key] * key / biased_n
-    biased_mean += quick_calc
+Part 1:  Code to model the actual distribtion of the data set .  
+   
+actual_dist = thinkstats2.Hist(resp['numkdhh'], label='frequency') .  
+thinkplot.Hist(actual_dist) .  
+thinkplot.Config(xlabel='Number of Children per Family', ylabel='Count') .  
+   
+actual_n = actual_dist.Total() .  
+actual_dict = {} .  
+for x in resp['numkdhh']:   
+    actual_dict[x] = actual_dict.get(x, 0) + 1 .  
+   
+actual_mean = 0 . 
+for key in actual_dict:  
+    quick_calc = actual_dict[key] * key /actual_n . 
+    actual_mean += quick_calc   
+  
+  
+biased_dist = thinkstats2.Hist(resp['numkdhh'], label='Frequency') .  
+biased_dist[0] = 0 .  
+thinkplot.Hist(biased_dist) .  
+thinkplot.Config(xlabel='Number of Children per Family (Biased Sample)', ylabel='Count') . 
+  
+biased_n = biased_dist.Total() . 
+biased_dict = {} . 
+for x in resp['numkdhh']:  
+    biased_dict[x] = biased_dict.get(x, 0) + 1 . 
+biased_dict[0] = 0 . 
+      
+biased_mean = 0 . 
+for key in biased_dict:  
+    quick_calc = biased_dict[key] * key / biased_n . 
+    biased_mean += quick_calc . 
     
 
 Output (NOTE: Unable to copy graphs from Jupyter Notebook to this page.  Will try again)
