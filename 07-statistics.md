@@ -145,6 +145,17 @@ thinkplot.Show(xlabel='Percentile rank of randomly generated numbers between 0 a
 
 NOTE:  Output can't be copied from my Jupyter Notebook.  I am working on trying to fix this.
      
+random_sample = [np.random.random()for x in range(1000)]
+
+My_Pmf = thinkstats2.Pmf(random_sample)
+thinkplot.Pmfs([My_Pmf])
+thinkplot.Show(xlabel='Randomly generated numbers between 0 and 1', ylabel='PMF')
+
+My_Cdf = thinkstats2.Cdf(random_sample, label='random_numbers')
+thinkplot.Cdf(My_Cdf)
+thinkplot.Show(xlabel='Percentile rank of randomly generated numbers between 0 and 1', ylabel='CDF')
+
+print("This sample of randomly generated numbers is uniformly distributed.")
 
    
    
