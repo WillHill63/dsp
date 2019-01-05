@@ -136,18 +136,16 @@ My_Pmf = thinkstats2.Pmf(random_sample) .
 thinkplot.Pmfs([My_Pmf]) .    
 thinkplot.Show(xlabel='Randomly generated numbers between 0 and 1', ylabel='PMF')
 
-My_Cdf = thinkstats2.Cdf(random_sample, label='random_numbers') . 
-thinkplot.Cdf(My_Cdf)  
-thinkplot.Show(xlabel='Percentile rank of randomly generated numbers between 0 and 1', ylabel='CDF')
+My_Cdf = thinkstats2.Cdf(random_sample, label='random_numbers')  . /n
+thinkplot.Cdf(My_Cdf) . /n 
+thinkplot.Show(xlabel='Percentile rank of randomly generated numbers between 0 and 1', ylabel='CDF') . /n
 
-**Comments:  This sample of randomly generated numbers is uniformly distributed.  The PMF chart shows that all the values between 0 and 1 occur with equal probability, while the CDF graph appears as a straight line with a 45 degree angle.  Both graphs are what you would expect if the data were distributed uniformly.
+**Comments:  This sample of randomly generated numbers is uniformly distributed.  The PMF chart shows that all the values between 0 and 1 occur with equal probability, while the CDF graph appears as a straight line with a 45 degree angle.  Both graphs are what you would expect if the data were distributed uniformly.**
 
 
-NOTE:  Output can't be copied from my Jupyter Notebook.  I am working on this.
+NOTE:  Output can't be copied from my Jupyter Notebook.  I am working on trying to fix this.
      
 
-   
-   
    
    
 
