@@ -86,7 +86,9 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> This is an example of conditional probability.  To answer the question, you need to focus on the relative probability of being an identical twin to the probability of being **either** a fraternal twin **or** and identical twin. 
+>> **ANSWER TO QUESTION 5**
+
+This is an example of conditional probability.  To answer the question, you need to focus on the relative probability of being an identical twin to the probability of being **either** a fraternal twin **or** and identical twin. 
 
 Let's start with the probability of being an identical twin (1/300).  This is not the probability we need, because a set of identical twins will be composed of either two boys or two girls.  We are only interested in the probability of two boys, which can be expressed as (1/300) * 0.50 or (1/600).  This probability will be the numerator of the fraction we will solve.
 
