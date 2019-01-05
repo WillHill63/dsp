@@ -76,14 +76,22 @@ HERE IS MY CODE FOR QUESTION 1:
 
 Step 1:  Define A Function to Calculate Cohen's D:   
 
-def CohenEffectSize(group1, group2):     /n
+def CohenEffectSize(group1, group2): /n
+
     diff = group1.mean() - group2.mean() . /n 
+    
     var1 = group1.var() .    /n
+    
     var2 = group2.var() .    /n      
+    
     n1 = len(group1) .     /n
+    
     n2 = len(group2) .     /n
+    
     pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2) .   /n
+    
     d = diff / math.sqrt(pooled_var) .  /n
+    
     return d .  /n
     
 
